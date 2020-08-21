@@ -5,17 +5,32 @@
              x:Class="TestDrive.MainPage">
 
 
-    <ListView x:Name="ListViewVeiculos" ItemsSource="{Binding Veiculos}">
+
+    <ListView x:Name="listViewPaises"
+              ItemsSource="{Binding Paises}"
+              ItemTapped="listViewPaises_ItemTapped"
+              >        
+    </ListView>
+
+    
+    
+    
+    <!--<ListView x:Name="ListViewVeiculos" ItemsSource="{Binding Veiculos}" Margin="25"
+              ItemTapped="ListViewVeiculos_ItemTapped">
         <ListView.ItemTemplate>
             <DataTemplate>
                 <ViewCell>
                     <ViewCell.View>
-                        <Label Text="{Binding Nome}"></Label>
+                        <StackLayout Orientation="Horizontal">
+                            <Label Text="{Binding Nome}" FontSize="20" VerticalTextAlignment="Center"></Label>
+                            <Label Text=" - " VerticalTextAlignment="Center"></Label>
+                            <Label Text="{Binding PrecoFormatado}" FontAttributes="Bold" VerticalTextAlignment="Center"></Label>
+                        </StackLayout>
                     </ViewCell.View>
                 </ViewCell>
             </DataTemplate>
         </ListView.ItemTemplate>
-    </ListView>
+    </ListView>-->
 
 
 
