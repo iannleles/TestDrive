@@ -6,16 +6,16 @@
 
 
 
-    <ListView x:Name="listViewPaises"
+    <!--<ListView x:Name="listViewPaises"
               ItemsSource="{Binding Paises}"
               ItemTapped="listViewPaises_ItemTapped"
               >        
-    </ListView>
+    </ListView>-->
 
     
     
     
-    <!--<ListView x:Name="ListViewVeiculos" ItemsSource="{Binding Veiculos}" Margin="25"
+    <ListView x:Name="ListViewVeiculos" ItemsSource="{Binding Veiculos}" Margin="25"
               ItemTapped="ListViewVeiculos_ItemTapped">
         <ListView.ItemTemplate>
             <DataTemplate>
@@ -30,7 +30,7 @@
                 </ViewCell>
             </DataTemplate>
         </ListView.ItemTemplate>
-    </ListView>-->
+    </ListView>
 
 
 
