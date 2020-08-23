@@ -11,10 +11,22 @@ namespace TestDrive.Views
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class DetalheView : ContentPage
-    {
-        public DetalheView()
+    { 
+        public Veiculo Veiculo { get; set; }
+
+        public DetalheView(Veiculo veiculo)
         {
-            InitializeComponent();
+            InitializeComponent();            
+            this.Veiculo = veiculo;
+            this.BindingContext = this;
+
+        }
+
+        private void buttonProximo_Clicked(object sender, EventArgs e)
+        {
+
+
+            Navigation.PushAsync(new AgendamentoView(this.Veiculo));
         }
     }
 }

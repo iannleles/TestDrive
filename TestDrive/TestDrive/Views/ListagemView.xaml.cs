@@ -84,7 +84,7 @@ namespace TestDrive.Views
         {
             var veiculo = (Veiculo)e.Item;
 
-            Navigation.PushAsync(new DetalheView());
+            Navigation.PushAsync(new DetalheView(veiculo));
 
         }
     }

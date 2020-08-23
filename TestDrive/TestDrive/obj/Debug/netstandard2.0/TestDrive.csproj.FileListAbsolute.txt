@@ -13,3 +13,4 @@ C:\Dev\Xamarin\TestDrive\TestDrive\TestDrive\obj\Debug\netstandard2.0\TestDrive.
 C:\Dev\Xamarin\TestDrive\TestDrive\TestDrive\obj\Debug\netstandard2.0\TestDrive.csprojAssemblyReference.cache
 C:\Dev\Xamarin\TestDrive\TestDrive\TestDrive\obj\Debug\netstandard2.0\Views\ListagemView.xaml.g.cs
 C:\Dev\Xamarin\TestDrive\TestDrive\TestDrive\obj\Debug\netstandard2.0\Views\DetalheView.xaml.g.cs
+C:\Dev\Xamarin\TestDrive\TestDrive\TestDrive\obj\Debug\netstandard2.0\Views\AgendamentoView.xaml.g.cs
