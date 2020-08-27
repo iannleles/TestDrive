@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.InteropServices.ComTypes;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -38,6 +39,33 @@ namespace TestDrive.Views
             get
             {
                 return string.Format("MP3 Player - R$ {0}", MP3_PLAYER);
+            }
+        }
+
+        bool temFreioABS;
+
+        public bool TemFreioABS
+        {
+            get
+            {
+                return temFreioABS;
+            }
+            set
+            {
+                temFreioABS = value;
+
+                OnPropertyChanged();
+                OnPropertyChanged(nameof(ValorTotal));
+            }
+        }
+
+        public string ValorTotal
+        {
+            get
+            {
+                return string.Format("Valor Total: R$ {0}",
+                    Veiculo.Preco
+                    + (TemFreioABS ? FREIO_ABS : 0));
             }
         }
 
